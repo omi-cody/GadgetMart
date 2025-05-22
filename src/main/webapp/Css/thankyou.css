@@ -1,0 +1,62 @@
+@charset "UTF-8";
+:root{
+	--color1:#04045E;
+    font-family: "Poppins", sans-serif;
+}
+body{
+	background: radial-gradient(circle, rgba(0, 119, 185, 1) 0%,
+		rgba(1, 179, 215, 1) 66%, rgba(145, 224, 239, 1) 98%);
+		background-size:cover;
+	min-height:100vh;
+}
+ /* Reset some default styles */
+ .pop-body {
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+/* Custom styles */
+.pop-main-container {
+    width: 600px;
+    padding: 30px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.5);
+	border: 2px solid rgba(255, 255, 255, 0.2);
+	backdrop-filter: blur(20px);
+	box-shadow: 0 0 10px rbga(0, 0, 0, 0.1);
+    text-align: center;
+}
+.pop-icon-check_circle {
+    font-size: 5rem;
+    color: #28a745;
+}
+.pop-h2 {
+    color: var(--color1);
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+.pop-lead {
+    color: #000000;
+    font-size: 1.25rem;
+    margin-bottom: 40px;
+}
+.pop-btn-back {
+    background-color: #f30909e6;
+    font-weight: 500;
+    color: #ffffff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 40px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+.pop-btn-back:hover {
+    background-color: #b30086;
+}

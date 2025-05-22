@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+:root {
+	--color1: #04045E;
+	--color2: #0077b9;
+	--color3: #01b3d7;
+	--color4: #91e0ef;
+	--color5: #caf1f8;
+}
+
+footer {
+	display: flex;
+	align-content: center;
+	justify-content: space-around;
+	background: rgba(255, 255, 255, 0.21);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5.9px);
+	-webkit-backdrop-filter: blur(5.9px);
+	border: 1px solid rgba(255, 255, 255, 0.25);
+	backdrop-filter: blur(10px);
+	backdrop-filter: blur(5px);
+	width: 100%;
+	height: 300px;
+	bottom:0%;
+}
+
+.gadgetmart {
+	display: flex;
+	flex-direction: column;
+}
+
+h2 {
+	margin: 30px 0 0 0;
+	font-size: 30px;
+	color: var(--color1)
+}
+
+hr {
+	border: 3px solid black;
+	width: 100%;
+}
+p{
+	font-size: 25px;
+}
+
+
+.gadgetmart a {
+	text-decoration: none;
+	margin-left: 20px;
+	font-size: 25px;
+	font-weight: bold;
+	margin-bottom:15px;
+	color: black;
+	transition:ease-in-out 0.2s;
+}
+.gadgetmart a:hover{
+	transform: translateX(5px);
+	color:white;
+	
+}
+.follow-us a img{
+	margin:15px;
+	width: 40px;
+}
+

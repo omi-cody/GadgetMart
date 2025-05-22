@@ -1,0 +1,44 @@
+@charset "UTF-8";
+body{
+	overflow-x:hidden;
+	position: relative;
+	
+}
+.successMessage {
+	z-index:50000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+
+}
+
+
+.errorMessage {
+	color: white;
+	z-index:10000;
+	background-color: #d81c5c;
+	padding: 15px;
+	width:300px;
+	border-radius: 10px;
+	position: absolute;
+	top: 100px;
+	right: -300px;
+	animation: slideIn 0.7s forwards, slideOut 1s forwards 4s;
+}
+
+@keyframes slideIn {
+        0% { right: -300px; }
+        100% { right: 20px; }
+    }
+
+    @keyframes slideOut {
+        0% {right:20px; opacity: 1; }
+        100% {right:-100%; opacity: 0; }
+    }

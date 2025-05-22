@@ -1,0 +1,244 @@
+@charset "UTF-8";
+
+:root{
+	--color1:#04045E;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+body{
+	background: radial-gradient(circle, rgba(0, 119, 185, 1) 0%,
+		rgba(1, 179, 215, 1) 66%, rgba(145, 224, 239, 1) 98%);
+		background-size:cover;
+	min-height: 100%;
+}
+
+/* Css code for about us page */
+main{
+	z-index:0;
+    padding: 120px 10px;
+    
+}
+/* css for group photo */
+.grp_photo{
+    border: 1px solid white;
+    height: 200px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.about-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+/* css for member  */
+.about{
+	z-index:0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    width:90%;
+    height:550px;
+    background: rgba(255, 255, 255, 0.15);
+	border:2px solid rgba(255,255,255,0.2);
+	backdrop-filter: blur(20px);
+	border-radius:20px;
+	box-shadow:2px 2px 20px rgba(0, 0,0, 0.1);
+    transition: all 0.3s ease-in-out; 
+}
+.about .about_image img{
+	clip-path: circle(48%);
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+
+    
+}
+.about .about_image img:hover{
+    transition: all 0.3s ease-in-out;
+    scale: 1.02;
+}
+.about .about_image{
+    margin: 40px;
+    padding-top: 30px;
+}
+.about:hover{
+    scale: 1.01;
+    background-color: transparent;
+    border: 1px solid rgb(75, 157, 234);
+    box-shadow: 2px 2px 20px rgba(4, 4, 94, 0.5);
+    
+}
+.about-content{
+    padding: 30px;
+    line-height: 2px;
+    
+}
+.about .about-content h3{
+    margin-top: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    color: var(--color1);
+}
+.about-content p{
+    width: 90%;
+    font-size:27px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    line-height: 25px;
+}
+.about .about-content .fname{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:34px ;
+    color: rgb(14, 14, 14);
+}
+.about .about-content #backname{
+    font-family: 'Cookie', cursive;
+    font-size: 30px;
+    color: var(--color1);
+    margin-left: 7px;
+}
+.about-content .social-media{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+
+}
+.social-media a img{
+	width: 30px;
+	transition: all 0.5s ease-in-out;
+}
+.social-media a img:hover{
+    scale: 1.1;
+}
+
+/*css for inquiry form*/
+.body-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.inquiry-box {
+	margin-top: 10px;
+	width:50%;
+	height: 100%;
+	color: var(--color1);
+	padding: 50px 30px;
+	background: rgba(255, 255, 255, 0.15);
+	border: 2px solid rgba(255, 255, 255, 0.2);
+	backdrop-filter: blur(20px);
+	box-shadow: 0 0 10px rbga(0, 0, 0, 0.1);
+	border-radius: 20px;
+	transition:background ease-in-out 0.5s;
+}
+.inquiry-box:hover{
+ background:  rgba(255, 255, 255, 0.5);
+}
+.inquiry-box h1 {
+	font-size: 40px;
+	text-align: center;
+	margin-bottom: 15px;
+	color: #04045E;
+}
+
+.inquiry-box .input-box {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.input-box .input-field {
+	position: relative;
+	width: 100%;
+	height: 70px;
+	margin: 13px 0px;
+}
+.input-box .input-field textarea{
+	height:300px;
+}
+.input-box .input-field input, textarea{
+	width: 100%;
+	height: 100%;
+	background: transparent;
+	border: 3px solid rgba(4, 4, 94, 0.5);
+	outline: none;
+	font-size: 20px;
+	color: var(--color1);
+	border-radius: 6px;
+	padding: 15px 15px 15px 20px;
+}
+
+.input-box .input-field input::placeholder {
+	color: var(--color1);
+}
+
+.input-box .input-field i {
+	position: absolute;
+	left: 15px;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 25px;
+	color: #04045E;
+}
+
+.input-field label {
+	font-size: 25px;
+	font-weight: 600;
+	margin: 15px 10px 10px 20px;
+}
+
+.inquiry-box .input-field {
+	display: flex;
+	justify-content: space-around;
+}
+
+.inquiry-box .input-field span {
+	margin: 20px 10px 10px 20px;
+	font-size: 20px;
+}
+
+.input-field span input {
+	margin: 4px 10px 0px 0px;
+	outline: none;
+}
+textarea{
+	resize: none;
+	padding:15px;
+	margin-bottom: 20px;
+	height: 120px;
+}
+textarea::placeholder{
+	color: var(--color1);
+}
+.inquiry-box .inq-btn {
+	margin-top: 250px;
+	width: 100%;
+	height: 60px;
+	background: var(--color1);
+	border: none;
+	outline: none;
+	border-radius: 40px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+	color: white;
+	font-size: 22px;
+	font-weight: 600;
+	transition: ease-in-out 0.3s;
+}
+
+.inquiry-box .inq-btn:hover {
+	border: 1px solid var(--color1);
+	background: transparent;
+	color: var(--color1);
+}
+

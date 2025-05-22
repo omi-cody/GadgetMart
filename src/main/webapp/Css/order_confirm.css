@@ -1,0 +1,155 @@
+@charset "UTF-8";
+/* styles.css */
+
+*{
+	margin:0;
+	padding:0;
+}
+
+/* Common styles */
+body {
+  font-size: 18px;
+  line-height: 1.6;
+  background: radial-gradient(circle, rgba(0, 119, 185, 1) 0%,
+		rgba(1, 179, 215, 1) 66%, rgba(145, 224, 239, 1) 98%);
+		background-size:cover;
+	min-height:100vh;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+
+}
+
+.ddi{
+	
+	padding:30px;
+}
+
+.grid-container {
+margin-top:200px;
+margin-left:500px;
+margin-bottom:200px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.border {
+background: rgba(255, 255, 255, 0.15);
+	border:5px solid rgba(255,255,255,0.2);
+	backdrop-filter: blur(20px);
+	box-shadow:0 0 10px rbga(0,0,0,0.1);
+  border-radius: 12px;
+  transition: all ease-in-out 0.5s;
+ 
+}
+.border:hover{
+	background: rgba(255,255,255,0.5);
+}
+
+.p-4 {
+  padding: 24px;
+    width: 470px;
+}
+
+
+
+.text-lg {
+  font-size: 1.5rem;
+}
+
+.font-semibold {
+  font-weight: 700;
+}
+
+.my-4 {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.grid {
+  display: grid;
+  gap: 20px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.gap-4 {
+  gap: 20px;
+}
+
+.input,
+.select {
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  padding: 12px;
+  font-size: 1.2rem;
+}
+
+.textarea {
+  min-height: 120px;
+}
+
+.button {
+  font-size: 1.2rem;
+  padding: 12px 24px;
+  border-radius: 6px;
+  background-color: black;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cart-container{
+	display:flex;
+	gap:30px;
+}
+
+.showe{
+	
+	width:500px;
+	padding: 40px;
+	
+}
+
+.button:hover {
+  background-color: #333;
+}
+
+@media (min-width: 768px) {
+  .grid-cols-1.md\:grid-cols-2 > * {
+    width: calc(50% - 10px);
+  }
+
+  .grid-cols-1.md\:grid-cols-2 > :nth-child(odd) {
+    margin-right: 20px;
+  }
+}
+
+/* Adjust text alignment for product details */
+.text-left {
+  text-align: left;
+}
+
+/* Adjust text alignment for product details */
+.product-details {
+  text-align: left;
+}
